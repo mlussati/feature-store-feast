@@ -28,7 +28,6 @@ def convert_to_parquet():
 
     # Convert to parquet
     DATA_DIR = Path(os.getcwd(), "data")
-    print(DATA_DIR)
     return df_res.to_parquet(
         Path(DATA_DIR, "features.parquet"),
         compression=None,
